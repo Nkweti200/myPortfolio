@@ -1,0 +1,3 @@
+name: nkwetimangem9
+password: Fgbw7DGZj2beyNAV
+mongodb+srv://nkwetimangem9:Fgbw7DGZj2beyNAV@cluster0.w6d77xl.mongodb.net/

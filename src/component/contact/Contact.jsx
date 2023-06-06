@@ -48,11 +48,11 @@ target='_blank'>Whatsapp me</a>
 </article>
 </div>
 <form ref={form} onSubmit={sendEmail}>
-<input type="text" name='name' placeholder='full name' required/>
-<input type="email" name='email' placeholder='your email' required/>
-<textarea name="message" id="message" cols="30" rows="10"
-placeholder='your message' required></textarea>
-<button type="submit" className='btn btn-primary'>send message</button>
+    <input type="text" name='name' placeholder='full name' required/>
+    <input type="email" name='email' placeholder='your email' required/>
+    <textarea name="message" id="message" cols="30" rows="10"
+    placeholder='your message' required></textarea>
+    <button type="submit" className='btn btn-primary'>send message</button>
 </form>
 </div>
 </section>
