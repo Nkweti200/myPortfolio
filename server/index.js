@@ -1,5 +1,6 @@
 const express = require('express')
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000
+const cors = require('cors')
 
 const mongoose = require('mongoose')
 
@@ -18,13 +19,16 @@ const db = async () => {
 
 db()
 const app = express()
+app.use(cors())
+app.use(json)
 
 
-    app. get("/api",(req, res)=>{
-        res.json({ })
+    app.get("/api",(req, res)=>{
+        res.json('Anne Portfolio')
     })
+      app.use(require('./routes/serviceroute'))
 
-app.listen(PORT, () =>{console.log("server started on port 5000")})   
+app.listen(PORT, () =>{console.log(`server started on port ${PORT}`)})   
 
 mongoose.connection.once('open', ()  => {
     console.log('mongodb connected')
