@@ -1,12 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "homepage":"http://Nkweti200.github.io/myportfolio_deploy",
+ 
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server",
     "dev": "node server"
